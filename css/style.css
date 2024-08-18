@@ -1,0 +1,234 @@
+/* -------------------------------- IMPORT -------------------------------- */
+@font-face {
+    font-family: "Reddit Mono", monospace;
+    src: url('/fonts/"Reddit Mono", monospace.woff') format('woff');
+}
+@import url('https://fonts.googleapis.com/css2?family=Micro+5+Charted&display=swap');
+
+/* -------------------------------- MAIN CSS -------------------------------- */
+html {
+    font-family: "Reddit Mono", monospace;
+}
+body {
+    margin: 0;
+    font-family: "Reddit Mono", monospace;
+    text-transform: lowercase !important;
+    font-weight: 800 !important;
+    height: 3000px;
+    width: 100%;
+}
+h1 {
+    font-size: 6vh;
+}
+h2 {
+    font-size: 4vh;
+}
+h3 {
+    font-size: 2vh;
+}
+h4 {
+    font-size: 2vh;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+section {
+    width: 100%;
+    margin: 0;
+}
+/* -------------------------------- SECTIONS -------------------------------- */
+#intro {
+    background-color: black;
+    min-height: 100vh;
+}
+#about {
+    background-image: url(../images/background-about.png), url(../images/background-texture.png);
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    color: white;
+}
+#experience {
+    background-color: black;
+    background-size: 100%;
+    font-family: "Reddit Mono", monospace;
+    color: white;
+}
+#projects {
+    background-color: white;
+    color: black;
+    height: auto;
+}
+#cover-letter {
+    background-image: url(../images/background-texture.png);
+    background-repeat: repeat;
+    background-size: 100%;
+    color: white;
+}
+/* -------------------------------- GENERAL -------------------------------- */
+#text {
+    font-size: 4vh;
+    color: white;
+    z-index: 50;
+    width: 70%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.container {
+    margin: auto;
+    width: 70%;
+    padding: 70px 0;
+    height: 100%;
+}
+.dates {
+    font-family: "Reddit Mono", monospace;
+}
+.dates-box {
+    display: block;
+    background-color: white;
+    color: black;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.divider {
+    border-top: 10px white solid;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.email-link {
+    color: white;
+}
+.email-link:hover {
+    color: white;
+    text-decoration: underline !important;
+}
+/* -------------------------------- RESPONSIVE -------------------------------- */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 4vh;
+    }
+    h2 {
+        font-size: 4vh;
+    }
+    h3 {
+        font-size: 3vh;
+    }
+    h4 {
+        font-size: 2vh;
+    }
+    li {
+        font-size: 2vh;
+    }
+    #text {
+        font-size: 2vh;
+    }
+    .parent {
+        display: none !important;
+    }
+    section {
+        width: 100%;
+        margin: 0;
+    }
+    .col-sm-4 {
+        width: 100%;
+    }
+    .col-sm-8 {
+        width: 100%;
+    }
+}
+/* -------------------------------- BUTTONS -------------------------------- */
+.project-button {
+    display: block;
+    border: 10px white solid;
+    background-color: black;
+    font-family: "Reddit Mono", monospace;
+    color: white;
+    padding: 20px;
+    margin-top: 3vh;
+}
+.project-button:hover {
+    border: 10px white solid;
+    background-color: white;
+    color: black;
+}
+.button-cover {
+    color: white;
+    display: block;
+    border: 10px white solid;
+    background-color: none;
+    padding: 20px;
+}
+.button-cover:hover {
+    color: black;
+    background-color: white;
+    border: 10px white solid;
+}
+/* -------------------------------- MARQUEE -------------------------------- */
+marquee {
+    color: #1c1919 solid;
+    font-size: 8vh;
+    z-index: 100px;
+}
+.marquee-experience {
+    font-family: "Reddit Mono", monospace;
+    border-left: none;
+    border-right: none;
+    border-top: 10px white solid;
+    border-bottom: 10px white solid;
+    background-color: black;
+}
+.marquee-project {
+    font-family: "Micro 5 Charted";
+    border: 10px #1c1919 solid;
+    background-color: #ffa669;
+}
+/* -------------------------------- CLOUD -------------------------------- */
+.parent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.parent > div {
+    position: absolute;
+    top: 0;
+}
+.child1 { 
+    width: 40vw;
+    height: 80vh;
+}
+.child3 {
+    z-index: 0;
+}
+.child2 > div {
+    position: absolute;
+}
+  .child2-one {
+    width: 200px;
+    height: 100px;
+    top: 70px;
+    left: -1000px;
+    z-index: 100;
+}
+.child2-two {
+    width: 200px;
+    height: 250px;
+    top: 50px;
+    left: 175px;
+}
+.child2-three {
+    width: 100px;
+    height: 75px;
+    top: 500px;
+    left: 0;
+    z-index: 100;
+}
